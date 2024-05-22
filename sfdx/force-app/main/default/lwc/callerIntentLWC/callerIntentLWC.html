@@ -1,0 +1,84 @@
+<template>
+    <!-- <article class="slds-card"  style="padding: 10px;background-color: rgb(248, 172, 239); width: 90%;  margin: auto;    "> -->
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name='action:call' alternative-text='call' size='x-small'
+                        title='call'></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="#" class="slds-card__header-link slds-truncate" title="Caller Intent">
+                            <span>Caller Intent</span>
+                        </a>
+                    </h2>
+                </div>
+            </header>
+        </div>
+
+        <div class="slds-card__body slds-card__body_inner">
+            <div if:true={showSpinner}>
+                <div class="slds-spinner_container">
+                    <div class="slds-spinner--brand  slds-spinner slds-spinner--medium slds-is-relative">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                        <p class="slds-spinner-text">Updating...</p>
+                    </div>
+                </div>
+            </div>
+
+            <lightning-record-edit-form object-api-name={voiceObj} record-id={recordId} onsubmit={handleSubmit}
+                onsuccess={handleSuccess} onerror={handleError}>
+
+                <div class="slds-var-m-top_medium">
+                    <label class="slds-form-element__label" for="callerIntentId"><span style="color:red">*&nbsp;</span>
+                        Primary Reason</label>
+                    <lightning-combobox name="CallerIntentPickList"
+                                        value={callIntentDbVal}
+                                        placeholder="Select Intent"
+                                        options={callIntentPickList}
+                                        onchange={handleIntentChange}
+                                        id="callerIntentId"
+                                        variant="label-hidden"
+                                        required></lightning-combobox>
+
+                    <label class="slds-form-element__label" for="callReasonId"><span style="color:red">*&nbsp;</span>
+                        Secondary Reason</label>
+                    <lightning-combobox name="CallReasonPickList" 
+                                        value={callReasonDbVal}
+                                        placeholder="Select Reason"
+                                        options={filterIntentPicklistDep}
+                                        onchange={handleReasonChange}
+                                        id="callReasonId"
+                                        variant="label-hidden"
+                                        required></lightning-combobox>
+
+                    <!-- <lightning-input-field field-name={callerIntentField} class="slds-hide"></lightning-input-field>
+                    <lightning-input-field field-name={callReasonField} class="slds-hide"></lightning-input-field>
+                    <lightning-input-field field-name={callResolutionField} class="slds-hide"></lightning-input-field> -->
+
+                    <label class="slds-form-element__label" for="descriptionId">Description</label>
+                    <lightning-input-field field-name={descriptionField} id="descriptionId"
+                        variant="label-hidden"></lightning-input-field>
+
+                    <label class="slds-form-element__label" for="callResolutionId"><span style="color:red">*&nbsp;</span>Call Outcome</label>
+                    <lightning-combobox name="callResolutionId" 
+                                        value={outcomeDbVal}
+                                        placeholder="Select Outcome"
+                                        options={outcomePickList}
+                                        onchange={handleOutcomeChange} 
+                                        id="callResolutionId" 
+                                        variant="label-hidden"
+                                        required></lightning-combobox>
+
+                    <div class="slds-m-vertical_medium">
+                        <lightning-button variant="brand" type="submit" label="Save" class="slds-button"></lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+
+        </div>
+    </article>
+</template>

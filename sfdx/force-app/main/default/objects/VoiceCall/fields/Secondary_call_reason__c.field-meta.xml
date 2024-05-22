@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_call_reason__c</fullName>
+    <description>Secondary Raason for caller intent tracking</description>
+    <externalId>false</externalId>
+    <label>Secondary Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Call_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reschedule Treatment</fullName>
+                <default>false</default>
+                <label>Reschedule Treatment</label>
+            </value>
+            <value>
+                <fullName>Schedule New Treatment</fullName>
+                <default>false</default>
+                <label>Schedule New Treatment</label>
+            </value>
+            <value>
+                <fullName>Reschedule Consultation</fullName>
+                <default>false</default>
+                <label>Reschedule Consultation</label>
+            </value>
+            <value>
+                <fullName>Appointment Questions</fullName>
+                <default>false</default>
+                <label>Appointment Questions</label>
+            </value>
+            <value>
+                <fullName>Make Payment/Collections</fullName>
+                <default>false</default>
+                <label>Make Payment/Collections</label>
+            </value>
+            <value>
+                <fullName>A/R Promo</fullName>
+                <default>false</default>
+                <label>A/R Promo</label>
+            </value>
+            <value>
+                <fullName>DNT/Write-Off</fullName>
+                <default>false</default>
+                <label>DNT/Write-Off</label>
+            </value>
+            <value>
+                <fullName>Payoff</fullName>
+                <default>false</default>
+                <label>Payoff</label>
+            </value>
+            <value>
+                <fullName>Card Update Only</fullName>
+                <default>false</default>
+                <label>Card Update Only</label>
+            </value>
+            <value>
+                <fullName>Balance Inquiry</fullName>
+                <default>false</default>
+                <label>Balance Inquiry</label>
+            </value>
+            <value>
+                <fullName>Request Payment Documentation</fullName>
+                <default>false</default>
+                <label>Request Payment Documentation</label>
+            </value>
+            <value>
+                <fullName>Payment Date Change</fullName>
+                <default>false</default>
+                <label>Payment Date Change</label>
+            </value>
+            <value>
+                <fullName>Pause Payment/Extension</fullName>
+                <default>false</default>
+                <label>Pause Payment/Extension</label>
+            </value>
+            <value>
+                <fullName>Payment Refusal</fullName>
+                <default>false</default>
+                <label>Payment Refusal</label>
+            </value>
+            <value>
+                <fullName>Update Contact Info</fullName>
+                <default>false</default>
+                <label>Update Contact Info</label>
+            </value>
+            <value>
+                <fullName>Purchase Addl Areas</fullName>
+                <default>false</default>
+                <label>Purchase Addl Areas</label>
+            </value>
+            <value>
+                <fullName>Refund Proccessing Question</fullName>
+                <default>false</default>
+                <label>Refund Proccessing Question</label>
+            </value>
+            <value>
+                <fullName>Lender Questions</fullName>
+                <default>false</default>
+                <label>Lender Questions</label>
+            </value>
+            <value>
+                <fullName>Collection Questions</fullName>
+                <default>false</default>
+                <label>Collection Questions</label>
+            </value>
+            <value>
+                <fullName>Negative Review</fullName>
+                <default>false</default>
+                <label>Negative Review</label>
+            </value>
+            <value>
+                <fullName>Complication</fullName>
+                <default>false</default>
+                <label>Complication</label>
+            </value>
+            <value>
+                <fullName>Staff Complaint</fullName>
+                <default>false</default>
+                <label>Staff Complaint</label>
+            </value>
+            <value>
+                <fullName>Scheduling Concerns</fullName>
+                <default>false</default>
+                <label>Scheduling Concerns</label>
+            </value>
+            <value>
+                <fullName>Refund Request/Cancellation</fullName>
+                <default>false</default>
+                <label>Refund Request/Cancellation</label>
+            </value>
+            <value>
+                <fullName>Client Separation</fullName>
+                <default>false</default>
+                <label>Client Separation</label>
+            </value>
+            <value>
+                <fullName>Poor Results</fullName>
+                <default>false</default>
+                <label>Poor Results</label>
+            </value>
+            <value>
+                <fullName>Consult Scheduling</fullName>
+                <default>false</default>
+                <label>Consult Scheduling</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>General FAQs</fullName>
+                <default>false</default>
+                <label>General FAQs</label>
+            </value>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>Parts Needed</fullName>
+                <default>false</default>
+                <label>Parts Needed</label>
+            </value>
+            <value>
+                <fullName>Parts Delay</fullName>
+                <default>false</default>
+                <label>Parts Delay</label>
+            </value>
+            <value>
+                <fullName>Tech Delay</fullName>
+                <default>false</default>
+                <label>Tech Delay</label>
+            </value>
+            <value>
+                <fullName>General Questions</fullName>
+                <default>false</default>
+                <label>General Questions</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>QA</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Lender Inquiry</fullName>
+                <default>false</default>
+                <label>Lender Inquiry</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Appointment</controllingFieldValue>
+            <valueName>Reschedule Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appointment</controllingFieldValue>
+            <valueName>Schedule New Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appointment</controllingFieldValue>
+            <valueName>Reschedule Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Appointment</controllingFieldValue>
+            <valueName>Appointment Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment/Collections</controllingFieldValue>
+            <valueName>Make Payment/Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment/Collections</controllingFieldValue>
+            <valueName>A/R Promo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment/Collections</controllingFieldValue>
+            <valueName>DNT/Write-Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment/Collections</controllingFieldValue>
+            <valueName>Payoff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Card Update Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Balance Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Request Payment Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Payment Date Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Pause Payment/Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Payment Refusal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Update Contact Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Purchase Addl Areas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Refund Proccessing Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Lender Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Update/Inquiry</controllingFieldValue>
+            <valueName>Collection Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Negative Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Complication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <valueName>Staff Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <valueName>Scheduling Concerns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <valueName>Refund Request/Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Client Separation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Concern</controllingFieldValue>
+            <valueName>Poor Results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Inquiry</controllingFieldValue>
+            <valueName>Consult Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Inquiry</controllingFieldValue>
+            <valueName>Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Inquiry</controllingFieldValue>
+            <valueName>General FAQs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>Parts Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>Parts Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>Tech Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>General Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser</controllingFieldValue>
+            <controllingFieldValue>Chiller</controllingFieldValue>
+            <valueName>QA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Refund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Lender Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clinic Inquiry</controllingFieldValue>
+            <valueName>Facilities</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
